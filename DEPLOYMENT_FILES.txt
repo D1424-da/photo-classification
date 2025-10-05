@@ -1,0 +1,43 @@
+コアクラス画像分類アプリ - 配布用ファイルリスト
+===============================================
+
+【必須ファイル - これらがないと動作しません】
+✅ core_classifier_organizer.py     (メインアプリケーション)
+✅ start_app.bat                    (起動スクリプト)
+✅ setup.bat                        (環境セットアップ)
+✅ requirements.txt                 (Python依存関係)
+✅ models/pile_classifier.h5        (訓練済みAIモデル)
+✅ models/model_info.json           (モデル設定情報)
+
+【推奨ファイル】  
+📄 PROJECT_README.md               (使用説明書)
+📄 models/core_model_info.json     (追加モデル情報)
+
+【配布時のフォルダ構成】
+your-project/
+├── core_classifier_organizer.py
+├── start_app.bat
+├── setup.bat
+├── requirements.txt
+├── PROJECT_README.md
+└── models/
+    ├── pile_classifier.h5
+    ├── model_info.json
+    └── core_model_info.json
+
+【セットアップ手順】
+1. 上記ファイルを新しいフォルダにコピー
+2. setup.bat を実行（環境構築）
+3. start_app.bat を実行（アプリ起動）
+
+【注意事項】
+- .venvフォルダは自動生成されるのでコピー不要
+- __pycache__フォルダもコピー不要
+- 他の*.pyファイル（debug用など）もコピー不要
+
+【ファイルサイズの目安】
+- core_classifier_organizer.py: ~25KB
+- models/pile_classifier.h5: ~8-15MB（最大サイズ）
+- その他のファイル: 各数KB
+
+総容量: 約15-20MB程度

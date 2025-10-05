@@ -1,0 +1,59 @@
+{
+  "app_info": {
+    "name": "杭種コード自動追加アプリ",
+    "version": "1.0.0",
+    "description": "AI画像認識による杭種判定・コード自動追加システム"
+  },
+  "pile_codes": {
+    "core_classes": {
+      "plastic": "P",
+      "plate": "PL",
+      "byou": "B", 
+      "concrete": "C"
+    },
+    "extended_classes": {
+      "traverse": "T",
+      "kokudo": "KD",
+      "gaiku_sankaku": "GK",
+      "gaiku_takaku": "GT",
+      "gaiku_hojo": "GH",
+      "gaiku_setsu": "GS",
+      "traverse_in": "TI",
+      "kagoshima_in": "KI"
+    },
+    "class_order": [
+      "plastic", "plate", "byou", "concrete",
+      "traverse", "kokudo", "gaiku_sankaku", "gaiku_setsu",
+      "gaiku_takaku", "gaiku_hojo", "traverse_in", "kagoshima_in"
+    ]
+  },
+  "model_settings": {
+    "model_path": "models/all_pile_classifier.h5",
+    "image_size": [320, 320],
+    "confidence_threshold": 0.7,
+    "batch_size": 64
+  },
+  "processing_settings": {
+    "supported_extensions": [".jpg", ".jpeg", ".png", ".bmp", ".tiff"],
+    "backup_enabled": true,
+    "max_file_size_mb": 30,
+    "priority_image_suffix": "-2",
+    "point_grouping_enabled": true
+  },
+  "ui_settings": {
+    "window_size": "800x600",
+    "log_max_lines": 1000,
+    "log_height": 15,
+    "log_width": 80
+  },
+  "training_settings": {
+    "data_dir": "training_data",
+    "validation_split": 0.15,
+    "test_split": 0.15,
+    "learning_rate": 0.001,
+    "epochs": 50,
+    "early_stopping_patience": 15,
+    "data_augmentation": true,
+    "save_best_only": true
+  }
+}

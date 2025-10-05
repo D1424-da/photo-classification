@@ -1,0 +1,25 @@
+# コアクラス画像分類・整理アプリ - 必要なライブラリ
+
+# 必須ライブラリ  
+numpy>=1.21.0
+Pillow>=8.3.0
+opencv-python>=4.5.0
+
+# AI/機械学習ライブラリ
+tensorflow>=2.8.0
+# keras は tensorflow に含まれています
+
+# データ処理・解析
+pandas>=1.3.0
+scikit-learn>=1.0.0
+
+# 可視化（オプション）
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# その他のユーティリティ
+# pathlib - Python 3.4以降は標準ライブラリ
+# tkinter - Python標準ライブラリ (GUI用)
+# datetime - Python標準ライブラリ
+# json - Python標準ライブラリ
+# threading - Python標準ライブラリ
