@@ -6,12 +6,14 @@
 ✅ start_app.bat                    (起動スクリプト)
 ✅ setup.bat                        (環境セットアップ)
 ✅ requirements.txt                 (Python依存関係)
-✅ models/pile_classifier.h5        (訓練済みAIモデル)
-✅ models/model_info.json           (モデル設定情報)
+✅ config.json                      (アプリケーション設定)
+✅ models/all_pile_classifier.h5    (12クラス対応訓練済みAIモデル)
+✅ models/all_pile_model_info.json  (12クラスモデル設定情報)
 
 【推奨ファイル】  
 📄 PROJECT_README.md               (使用説明書)
-📄 models/core_model_info.json     (追加モデル情報)
+📄 models/pile_classifier.h5       (4クラス対応フォールバックモデル)
+📄 models/model_info.json          (4クラスモデル設定情報)
 
 【配布時のフォルダ構成】
 your-project/
@@ -19,11 +21,13 @@ your-project/
 ├── start_app.bat
 ├── setup.bat
 ├── requirements.txt
+├── config.json
 ├── PROJECT_README.md
 └── models/
-    ├── pile_classifier.h5
-    ├── model_info.json
-    └── core_model_info.json
+    ├── all_pile_classifier.h5      (12クラス - メイン)
+    ├── all_pile_model_info.json    (12クラス設定)
+    ├── pile_classifier.h5          (4クラス - フォールバック)
+    └── model_info.json             (4クラス設定)
 
 【セットアップ手順】
 1. 上記ファイルを新しいフォルダにコピー

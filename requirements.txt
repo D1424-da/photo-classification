@@ -13,6 +13,9 @@ tensorflow>=2.8.0
 pandas>=1.3.0
 scikit-learn>=1.0.0
 
+# システムリソース監視（バッチ処理最適化用）
+psutil>=5.8.0
+
 # 可視化（オプション）
 matplotlib>=3.4.0
 seaborn>=0.11.0
@@ -23,3 +26,4 @@ seaborn>=0.11.0
 # datetime - Python標準ライブラリ
 # json - Python標準ライブラリ
 # threading - Python標準ライブラリ
+# concurrent.futures - Python 3.2以降は標準ライブラリ (並列処理用)
