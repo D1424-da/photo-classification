@@ -20,7 +20,7 @@
   ],
   "batch_size": 64,
   "epochs": 30,
-  "learning_rate": 0.001,
+  "learning_rate": 0.0005,
   "target_accuracy": 0.9,
   "model_save_path": "models/all_pile_classifier.h5",
   "memory_optimized": true,
