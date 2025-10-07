@@ -20,7 +20,7 @@
   ],
   "batch_size": 64,
   "epochs": 30,
-  "learning_rate": 0.0005,
+  "learning_rate": 0.001,
   "target_accuracy": 0.9,
   "model_save_path": "models/all_pile_classifier.h5",
   "memory_optimized": true,
@@ -39,5 +39,5 @@
     "traverse_in",
     "kagoshima_in"
   ],
-  "training_timestamp": "2025-09-28T01:21:36.305455"
+  "training_timestamp": "2025-10-07T11:38:30.841472"
 }
